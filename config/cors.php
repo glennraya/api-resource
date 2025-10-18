@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'], // TODO: Replace with your frontend domain(s) e.g., ['http://localhost:3000', 'https://yourdomain.com']
+    'allowed_origins' => ['http://localhost:5173', 'http://api-resource.test'], // Vite default port and Herd domain
 
     'allowed_origins_patterns' => [],
 
