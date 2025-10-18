@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['http://localhost:5173', 'http://api-resource.test'], // Vite default port and Herd domain
+    'allowed_origins' => ['http://app.resources.test:4001', 'http://api-resource.test'], // Custom frontend
 
     'allowed_origins_patterns' => [],
 
