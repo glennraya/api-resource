@@ -56,6 +56,10 @@ Route::post('/login', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', fn (Request $request) => $request->user());
 
+    Route::get('/users', function () {
+        return User::all();
+    });
+
     Route::post('/logout', function (Request $request) {
         $request->user()->currentAccessToken()->delete();
 
