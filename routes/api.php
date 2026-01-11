@@ -56,7 +56,11 @@ Route::post('/login', function (Request $request) {
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('/user', fn (Request $request) => $request->user());
 
-    Route::get('/users', function () {
+    // Route::get('/users', function () {
+    //     return User::all();
+    // });
+
+    Route::get('/users', function() {
         return User::all();
     });
 
